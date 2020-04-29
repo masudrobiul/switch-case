@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    char ch; //Write a C program to input any alphabet and check whether it is vowel or consonant...
+
+    printf("Enter any character: ");
+    scanf("%c", &ch);
+
+    switch ((ch == 'a')||(ch == 'e') || (ch == 'i') || (ch == 'o') || (ch == 'u') ||
+            (ch == 'A')||(ch == 'E') || (ch == 'I') || (ch == 'O') || (ch == 'U'))
+    {
+
+    case 1:
+        printf("%c is vowel.", ch);
+        break;
+
+    case 0:
+        switch ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+        {
+        case 1:
+            printf("%c is consonent.", ch);
+            break;
+        case 0:
+            printf("%c is not alphabet.", ch);
+            break;
+    }
+    }
+
+
+    return 0;
+}
