@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    char ch; //Write a C program to check whether a character is an alphabet or not...
+
+    printf("Enter any character: ");
+    scanf("%c", &ch);
+
+    switch ((ch >= 'a' && ch <= 'z')||(ch >= 'A' && ch <= 'Z'))
+    {
+
+    case 1:
+        printf("%c is Alphabet.", ch);
+        break;
+
+    case 0:
+        printf("%c is not Alphabet.", ch);
+        break;
+    }
+
+
+    return 0;
+}
